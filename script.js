@@ -14,7 +14,7 @@ const menuToggle = document.getElementById("menuToggle");
 const navLinks = document.getElementById("navLinks");
 
 const projectModal = document.getElementById("projectModal");
-const projectModalClose = document.getElementById("projectModalClose");
+const projectModalClose = document.getElementById("modalClose");
 
 const contactForm = document.getElementById("contactForm");
 const whatsappLink = document.getElementById("whatsappLink");
@@ -22,9 +22,6 @@ const whatsappLink = document.getElementById("whatsappLink");
 const currentYear = document.getElementById("currentYear");
 
 const projectButtons = document.querySelectorAll("[data-project]");
-
-const liveDemoButton = document.getElementById("liveDemo");
-const viewCodeButton = document.getElementById("viewCode");
 
 
 /* =========================================================
@@ -58,7 +55,7 @@ if (menuToggle && navLinks) {
    3. HEADER SCROLL EFFECT
 ========================================================= */
 
-const header = document.querySelector(".site-header");
+const header = document.querySelector(".header");
 
 function handleHeaderScroll() {
     if (!header) return;
@@ -390,42 +387,7 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
 });
 
 
-/* =========================================================
-   13. LIVE DEMO BUTTON
-========================================================= */
 
-if (liveDemoButton) {
-    liveDemoButton.addEventListener("click", (event) => {
-        event.preventDefault();
-
-        /*
-         * Add your real LUNA STORE URL here later.
-         */
-
-        alert(
-            "Your LUNA STORE live demo link will be added here."
-        );
-    });
-}
-
-
-/* =========================================================
-   14. VIEW CODE BUTTON
-========================================================= */
-
-if (viewCodeButton) {
-    viewCodeButton.addEventListener("click", (event) => {
-        event.preventDefault();
-
-        /*
-         * Add your GitHub repository URL here later.
-         */
-
-        alert(
-            "Your GitHub project link will be added here."
-        );
-    });
-}
 
 
 /* =========================================================
