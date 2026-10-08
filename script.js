@@ -312,7 +312,7 @@ if (contactForm) {
             return;
         }
 
-       contactForm.submit();
+       HTMLFormElement.prototype.submit.call(contactForm);
     });
 }
 
