@@ -339,7 +339,7 @@ if (whatsappLink) {
         const message =
             "Hello Maryem! I would like to talk about a website project.";
 
-        const whatsappNumber = "212600000000";
+        const whatsappNumber = "212684911987";
 
         const whatsappURL =
             `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
