@@ -312,17 +312,7 @@ if (contactForm) {
             return;
         }
 
-        /*
-         * The form is currently frontend-only.
-         * It does not send an email yet.
-         */
-
-        showFormMessage(
-            "Thank you! Your message is ready to be sent.",
-            "success"
-        );
-
-        contactForm.reset();
+       contactForm.submit();
     });
 }
 
