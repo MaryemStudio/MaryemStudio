@@ -192,7 +192,10 @@ if (projectModalClose) {
 
 if (projectModal) {
     projectModal.addEventListener("click", (event) => {
-        if (event.target === projectModal) {
+        if (
+            event.target === projectModal ||
+            event.target.id === "modalOverlay"
+        ) {
             closeProjectModal();
         }
     });
