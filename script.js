@@ -261,7 +261,6 @@ function isValidEmail(email) {
 
 if (contactForm) {
     contactForm.addEventListener("submit", (event) => {
-        event.preventDefault();
 
         const nameInput = contactForm.querySelector(
             '[name="name"]'
